@@ -25,7 +25,7 @@ const ActionsMenu = <T extends UserPublic>({
   disabled,
 }: ActionsMenuProps<T>) => {
   const navigate = useNavigate();
-  const editModal = useDisclosure();
+  // const editModal = useDisclosure();
   const deleteModal = useDisclosure();
 
   const handleView = () => {

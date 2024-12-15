@@ -7,7 +7,6 @@ import {
   type Body_login_login_access_token as AccessToken,
   type ApiError,
   AuthService,
-  type UserPublic,
   type UserRegister,
   UserService,
 } from "../client";

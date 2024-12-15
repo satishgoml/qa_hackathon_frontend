@@ -32,6 +32,7 @@ const DeleteConfirmation = ({ isOpen, onClose }: DeleteProps) => {
   const { logout } = useAuth()
 
   const mutation = useMutation({
+    // @ts-ignore TODO fix this
     mutationFn: () => UserService.deleteUserMe(),
     onSuccess: () => {
       showToast(

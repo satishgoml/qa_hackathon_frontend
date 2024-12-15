@@ -24,7 +24,7 @@ interface DeleteProps {
 // Mapping of types to services and query keys
 const entityConfig = {
   User: {
-    deleteFunction: (id: string) => UserService.deleteCurrentUser(),
+    deleteFunction: () => UserService.deleteCurrentUser(),
     queryKey: "users",
     deleteWarning:
       "All items associated with this user will also be permanently deleted.",

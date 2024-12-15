@@ -1,5 +1,5 @@
 import pb from "../core/pocketbase";
-import { ProjectPublic, ProjectCreate, ProjectUpdate } from "../models/project";
+import { ProjectPublic, ProjectUpdate } from "../models/project";
 
 export type TDataReadProjects = {
   skip: number; // Offset for pagination

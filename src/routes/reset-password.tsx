@@ -14,7 +14,6 @@ import { type SubmitHandler, useForm } from "react-hook-form";
 
 import {
   type ApiError,
-  UserService,
   AuthService,
   type NewPassword,
 } from "../client";

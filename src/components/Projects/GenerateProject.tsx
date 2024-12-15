@@ -11,7 +11,6 @@ import {
   ModalFooter,
   ModalHeader,
   ModalOverlay,
-  useColorMode,
 } from "@chakra-ui/react";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { SubmitHandler, useForm } from "react-hook-form";
@@ -49,7 +48,7 @@ const GenerateProject = ({ isOpen, onClose }: GenerateProjectProps) => {
         const project = await ProjectService.createProject(file);
 
         // create user stories
-        const userStories = UserStoryService.generateUserStories({
+        UserStoryService.generateUserStories({
           project_id: project.id,
         });
 
