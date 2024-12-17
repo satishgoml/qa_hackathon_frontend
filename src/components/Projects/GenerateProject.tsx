@@ -48,7 +48,7 @@ const GenerateProject = ({ isOpen, onClose }: GenerateProjectProps) => {
         const project = await ProjectService.createProject(file);
 
         // create user stories
-        UserStoryService.generateUserStories({
+        await UserStoryService.generateUserStories({
           project_id: project.id,
         });
 
